@@ -1,4 +1,11 @@
 :root {
+    /* App Colors */
+    --color-primary: var(--color-black);
+    --color-primary-variant: var(--color-gray);
+    --color-accent: var(--color-blue);
+    --color-accent-variant: var(--color-orange);
+    --color-text: var(--color-white);
+
     /* Colors */
     --color-white: #ffffff;
     --color-black: #050a13;
@@ -12,6 +19,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
 }
 
 h1,h2,h3,p,ul{margin:0;}
@@ -19,3 +27,17 @@ ul{list-style: none;padding:0;}
 a{text-decoration: none;color:var(--color-black)}
 button{background-color: transparent;outline: 0;border:0;}
 button:focus{outline: 1px solid var(--color-blue);}
+
+/* header */
+.header{position: fixed;top: 0;width: 100%;display: flex;justify-content: space-between;align-items: center;padding: 1rem;}
+.header__logo{display: flex;align-items: center;gap: 8px;}
+.header__logo__img{width: 36px;height: 36px;}
+.header__logo__title{font-size: 1.8rem;}
+.header__menu{display: flex;gap: 4px;}
+.header__menu__item{padding: 8px 16px;}
+.header__menu__item:hover{border-bottom: 1px solid var(--color-accent);}
+.header__menu__item.active{border: 1px solid var(--color-accent);border-radius: 4px;}
+
+/* Home */
+#home{background-color: var(--color-primary);color:var(--color-text);padding: 5rem 1rem;padding-top: 7rem;text-align: center;}
+.home__avatar{width: 250px;height: 250px;object-fit: cover;border: 3px solid var(--color-accent);border-radius: 100%;}
