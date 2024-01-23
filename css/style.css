@@ -45,7 +45,7 @@ button:focus{outline: 1px solid transparent;}
 .header__logo__title{font-size: 1.8rem;}
 .header__toggle{display: none;color: var(--color-white);font-size: 1.5rem;position: absolute;top: 1.5rem;right: 1rem;}
 .header__menu{display: flex;gap: 4px;}
-.header__menu__item{padding: 8px 16px;color:var(--color-white)}
+.header__menu__item{display: block;padding: 8px 16px;color:var(--color-white);border-bottom: 1px solid transparent;}
 .header__menu__item:hover{border-bottom: 1px solid var(--color-accent);}
 .header__menu__item.active{border: 1px solid var(--color-accent);border-radius: 4px;}
 
@@ -118,13 +118,13 @@ button:focus{outline: 1px solid transparent;}
 .contact__link:hover{color: var(--color-accent);}
 
 @media screen and (max-width: 768px) {
-    .section{padding: 3rem 2rem;}
+    .section{padding: 4rem 2rem;}
     .title{font-size: 2rem;}
     .description{font-size: 1rem;}
 
     .header{flex-direction: column;align-items: start;background-color: var(--color-primary);}
     .header__toggle{display: block;}
-    .header__menu{display:none;flex-direction: column;text-align: center;padding: 1rem 4rem;gap: 1rem}
+    .header__menu{display:none;flex-direction: column;text-align: center;margin: 1rem 4rem;gap: 1rem}
     .header__menu.open{display: flex;}
     .header__nav{width: 100%;}
 
